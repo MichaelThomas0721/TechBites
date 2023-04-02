@@ -1,4 +1,5 @@
 import { GraphQLClient } from "graphql-request";
+import { SECRET_CONTENTFUL_ENDPOINT } from '$env/static/private';
 
 export function RequestCreator(context, request) {
   let info = <any>{};
@@ -37,7 +38,7 @@ export async function ApiRoute(url: string, body: any) {
 }
 
 export function GraphQLRequest(request) {
-  const graphql = new GraphQLClient(process.env.CONTENTFUL_GRAPHQL_ENDPOINT, {
+  const graphql = new GraphQLClient(SECRET_CONTENTFUL_ENDPOINT, {
     headers: {
       authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
     },
