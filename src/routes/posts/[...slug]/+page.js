@@ -1,10 +1,8 @@
-export const load = ({ params, fetch }) => {
-    console.log(params);
-    const fetchPosts = async () => {
-        let data = await fetch(`/api/posts`);
-        data = await data.json();
-        return data;
-    }
+import ContentfulRequest from "$services/Client_ContentfulRequest";
+import request from "$cms/posts/index";
 
-    return { posts: fetchPosts() };
-}
+export const load = ({ params, fetch }) => {
+  const data = ContentfulRequest(request, fetch, {});
+
+  return { posts: data };
+};

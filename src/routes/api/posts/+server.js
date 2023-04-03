@@ -1,7 +1,7 @@
-import { GraphQLRequest } from "./../../../../services/ApiRequest";
-import { SECRET_CONTENTFUL_ENDPOINT } from '$env/static/private';
+import { GraphQLRequest } from "$services/Server_ContentfulRequest";
 
-export const GET = async ({ params, request }) => {
-  // let data = await GraphQLRequest(req.)
-  return new Response(JSON.stringify("Hello World!"), { status: 200 });
+export const POST = async ({ params, request }) => {
+  let data = await request.json();
+  let rData = await GraphQLRequest(data)
+  return new Response(JSON.stringify(rData), { status: 200 });
 };

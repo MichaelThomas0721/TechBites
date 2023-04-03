@@ -1,7 +1,7 @@
 <script>
-  import FeaturedPost from "../components/FeaturedPost.svelte";
-import Nav from "../components/Nav.svelte";
-  import SubFeaturedPost from "../components/SubFeaturedPost.svelte";
+  import FeaturedPost from "$components/FeaturedPost.svelte";
+import Nav from "$components/Nav.svelte";
+  import SubFeaturedPost from "$components/SubFeaturedPost.svelte";
   let name = "ALL THINGS TECH";
 
   function AddH() {
