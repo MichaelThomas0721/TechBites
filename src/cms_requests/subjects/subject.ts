@@ -1,7 +1,7 @@
-export default function () {
+export default function ({ subject }) {
     return `
     query pageBlogPostCollectionQuery {
-      pageBlogPostCollection {
+      pageBlogPostCollection (where: {subject: {title: "${subject}"}})  {
         items {
           internalName
           slug

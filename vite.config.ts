@@ -10,6 +10,7 @@ export default defineConfig({
 			$components: path.resolve('./src/components'),
 			$services: path.resolve('./src/services'),
 			$root: path.resolve('./src'),
+			$styles: path.resolve('./src/styles'),
 		}
 	}
 });

@@ -1,7 +1,7 @@
 export default function () {
     return `
     query pageBlogPostCollectionQuery {
-      pageBlogPostCollection {
+      pageBlogPostCollection (limit: 3) {
         items {
           internalName
           slug

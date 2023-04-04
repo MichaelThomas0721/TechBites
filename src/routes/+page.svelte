@@ -1,26 +1,18 @@
 <script>
-  import FeaturedPost from "$components/FeaturedPost.svelte";
-import Nav from "$components/Nav.svelte";
-  import SubFeaturedPost from "$components/SubFeaturedPost.svelte";
+  import FeaturedSection from "$components/FeaturedSection.svelte";
+  export let data;
+  let { posts } = data;
+  console.log(data);
   let name = "ALL THINGS TECH";
-
-  function AddH() {
-    name += "h";
-  }
 </script>
 
-<div class="bg-darkestPurple min-h-screen">
-  <Nav />
+<div class="bg-darkGreen min-h-screen w-full">
   <h1
-    class="text-[11vw] font-bold text-white text-center bg-gradient-to-b from-lightPurple to-purple"
+    class="text-[11vw] font-bold text-white text-center bg-gradient-to-b from-darkGreen to-darkGreen"
   >
     {name}
   </h1>
-  <button on:click={AddH}>Click me</button>
-  <div class="max-w-5xl">
-    <FeaturedPost />
-  </div>
-  <SubFeaturedPost />
+  <FeaturedSection {posts} />
 </div>
 
 <style lang="postcss">

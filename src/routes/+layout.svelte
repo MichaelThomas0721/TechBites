@@ -1,5 +1,13 @@
 <script>
-    import "../app.css";
-  </script>
-  
+  import Footer from "$components/footer/Footer.svelte";
+import Nav from "$components/nav/Nav.svelte";
+  import "../app.css";
+</script>
+
+<div class="min-h-screen w-full bg-greenGrey text-white flex flex-col">
+  <Nav />
+  <div class="pt-24 pb-12 h-full flex-grow">
   <slot />
+  </div>
+  <Footer />
+</div>

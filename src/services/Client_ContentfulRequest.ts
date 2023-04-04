@@ -1,15 +1,16 @@
-export default async function ContentfulRequest(request: any, fetch: any, params: any) {
-  return {
-    props: {
-      data: await ApiRoute(
-        "/api/posts",
-        {
-          request: request(),
-        },
-        fetch
-      ),
+export default async function ContentfulRequest(
+  request: any,
+  fetch: any,
+  params: any
+) {
+  let returnData = await ApiRoute(
+    "/api/posts",
+    {
+      request: request(params),
     },
-  };
+    fetch
+  );
+  return returnData;
 }
 
 async function ApiRoute(url: string, body: any, fetch: any) {
