@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
+		"@vitejs/plugin-react": "^3.1.0",
 		"autoprefixer": "^10.4.14",
 		"postcss": "^8.4.21",
 		"sass": "^1.60.0",
@@ -25,6 +26,8 @@
 	"type": "module",
 	"dependencies": {
 		"@contentful/rich-text-html-renderer": "^16.0.3",
+		"@contentful/rich-text-react-renderer": "^15.16.3",
+		"@contentful/rich-text-types": "^16.0.3",
 		"contentful": "^9.3.5",
 		"graphql-request": "^5.2.0",
 		"svelte-icons-pack": "^2.1.0"

@@ -1,6 +1,5 @@
 <script>
-  import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-  import { GetDefaultRenderOptions } from "$services/RenderOptions";
+  import richTextRenderer from "$services/RichTextRenderer";
   export let data;
   const post = data.post;
   const { author, title, shortDescription, featuredImage, content } = post;
@@ -13,13 +12,13 @@
     publishedDateArr[3];
   const images = content.links.entries.block;
   const json = content.json;
-  const renderOptions = GetDefaultRenderOptions({ images: images });
-  let htmlData = documentToHtmlString(json, renderOptions);
+
+  let richText = richTextRenderer(json, images);
 </script>
 
 <div>
   <div class="w-fit max-w-7xl mx-auto flex flex-col items-center">
-    <div class="max-w-5xl flex flex-col gap-6">
+    <div class="max-w-5xl flex flex-col gap-2">
       <div class="flex flex-row gap-3 h-12 items-center">
         <img
           src={author.avatar.url}
@@ -29,17 +28,18 @@
         <p>{author.name}</p>
         <p>{publishedDate}</p>
       </div>
-
       <p class="text-4xl">{title}</p>
-      <p class="text-2xl font-semibold">{shortDescription}</p>
+      <p class="text-2xl font-semibold mb-5">{shortDescription}</p>
       <img
         src={featuredImage.url}
         alt={"Post Image"}
         class="w-full aspect-video object-cover"
       />
     </div>
-    <div class="max-w-4xl">
-      <p>{@html htmlData}</p>
+    <div class="max-w-4xl flex flex-col gap-3 mt-12">
+      {#each richText as { component, props }}
+        <svelte:component this={component} {...props} />
+      {/each}
     </div>
   </div>
 </div>

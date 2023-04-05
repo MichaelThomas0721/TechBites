@@ -6,7 +6,7 @@ import Nav from "$components/nav/Nav.svelte";
 
 <div class="min-h-screen w-full bg-greenGrey text-white flex flex-col">
   <Nav />
-  <div class="pt-24 pb-12 h-full flex-grow">
+  <div class="pt-32 pb-12 h-full flex-grow">
   <slot />
   </div>
   <Footer />

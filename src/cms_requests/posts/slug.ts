@@ -29,6 +29,7 @@ export default function ({ slug }) {
                             image {
                                 url
                             }
+                            caption
                         }
                        }
                     }
