@@ -12,6 +12,7 @@ export default defineConfig({
 			$services: path.resolve('./src/services'),
 			$root: path.resolve('./src'),
 			$styles: path.resolve('./src/styles'),
+			$data: path.resolve('./src/data'),
 		}
 	}
 });

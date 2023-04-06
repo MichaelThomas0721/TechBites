@@ -33,7 +33,7 @@
       <img
         src={featuredImage.url}
         alt={"Post Image"}
-        class="w-full aspect-video object-cover"
+        class="w-full"
       />
     </div>
     <div class="max-w-4xl flex flex-col gap-3 mt-12">

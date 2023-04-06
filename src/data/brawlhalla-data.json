@@ -1,0 +1,63 @@
+{
+  "characters": [
+    {
+      "name": "Mordex",
+      "weapons": ["scythe", "gauntlets"]
+    },
+    {
+      "name": "Scarlet",
+      "weapons": ["hammer", "rocket-lance"]
+    },
+    {
+      "name": "Queen Nai",
+      "weapons": ["spear", "katars"]
+    },
+    {
+      "name": "Brynn",
+      "weapons": ["spear", "axe"]
+    },
+    {
+      "name": "Bodvar",
+      "weapons": ["hammer", "sword"]
+    },
+    {
+      "name": "Caspian",
+      "weapons": ["katars", "gauntlets"]
+    },
+    {
+      "name": "Artemis",
+      "weapons": ["scythe", "rocket-lance"]
+    },
+    {
+      "name": "Kor",
+      "weapons": ["hammer", "gauntlets"]
+    },
+    {
+      "name": "Orion",
+      "weapons": ["spear", "rocket-lance"]
+    },
+    {
+      "name": "Lucien",
+      "weapons": ["katars", "blasters"]
+    },
+    {
+      "name": "Nix",
+      "weapons": ["scythe", "blasters"]
+    },
+    {
+        "name": "Ezio",
+        "weapons": ["katars", "sword"]
+    }
+  ],
+  "weapons": [
+    "axe",
+    "blasters",
+    "gauntlets",
+    "hammer",
+    "katars",
+    "rocket-lance",
+    "scythe",
+    "spear",
+    "sword"
+  ]
+}

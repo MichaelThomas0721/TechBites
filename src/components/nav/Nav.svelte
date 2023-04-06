@@ -1,6 +1,7 @@
 <script>
   import MenuButton from "./MenuButton.svelte";
   import NavMenu from "./NavMenu.svelte";
+  import "$styles/logo.scss"
 
   let open = false;
 
@@ -18,14 +19,14 @@
 </script>
 
 <nav
-  class={`w-full h-24  ${
+  class={`w-full h-14 ${
     open ? "bg-opacity-100 bg-greenGrey" : "bg-opacity-10 bg-muddyGreen"
   } transition-all duration-300 z-50 fixed backdrop-blur-xl whitespace-nowrap`}
 >
   <div
-    class="flex flex-row justify-between px-3 items-center h-full shadow-bottom z-[60] relative"
+    class="flex flex-row justify-between px-3 py-1 items-center h-full shadow-bottom z-[60] relative"
   >
-    <a href="/">TechBites</a>
+    <a href="/" class="logo">TechBites</a>
     <MenuButton {open} {ToggleMenu} />
   </div>
   <NavMenu {open} {navOptions} {ToggleMenu} />

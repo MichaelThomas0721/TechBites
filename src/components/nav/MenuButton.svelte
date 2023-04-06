@@ -10,7 +10,7 @@
 </script>
 
 <button
-  class={`${open ? 'menuBtnOpened' : 'menuBtnClosed'} w-12 h-12 flex justify-center items-center relative`}
+  class={`${open ? 'menuBtnOpened' : 'menuBtnClosed'} h-full aspect-square flex justify-center items-center relative`}
   on:click={ToggleThisMenu}
 >
   <div />
