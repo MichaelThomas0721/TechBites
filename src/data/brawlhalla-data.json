@@ -2,51 +2,63 @@
   "characters": [
     {
       "name": "Mordex",
-      "weapons": ["scythe", "gauntlets"]
+      "weapons": ["scythe", "gauntlets"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Scarlet",
-      "weapons": ["hammer", "rocket-lance"]
+      "weapons": ["hammer", "rocket-lance"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Queen Nai",
-      "weapons": ["spear", "katars"]
+      "weapons": ["spear", "katars"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Brynn",
-      "weapons": ["spear", "axe"]
+      "weapons": ["spear", "axe"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Bodvar",
-      "weapons": ["hammer", "sword"]
+      "weapons": ["hammer", "sword"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Caspian",
-      "weapons": ["katars", "gauntlets"]
+      "weapons": ["katars", "gauntlets"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Artemis",
-      "weapons": ["scythe", "rocket-lance"]
+      "weapons": ["scythe", "rocket-lance"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Kor",
-      "weapons": ["hammer", "gauntlets"]
+      "weapons": ["hammer", "gauntlets"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Orion",
-      "weapons": ["spear", "rocket-lance"]
+      "weapons": ["spear", "rocket-lance"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Lucien",
-      "weapons": ["katars", "blasters"]
+      "weapons": ["katars", "blasters"],
+      "stats": [3, 5, 7, 9]
     },
     {
       "name": "Nix",
-      "weapons": ["scythe", "blasters"]
+      "weapons": ["scythe", "blasters"],
+      "stats": [3, 5, 7, 9]
     },
     {
-        "name": "Ezio",
-        "weapons": ["katars", "sword"]
+      "name": "Ezio",
+      "weapons": ["katars", "sword"],
+      "stats": [6, 5, 7, 9]
     }
   ],
   "weapons": [
@@ -59,5 +71,6 @@
     "scythe",
     "spear",
     "sword"
-  ]
+  ],
+  "stats": ["Defense", "Attack", "Dexterity", "Speed"]
 }

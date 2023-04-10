@@ -1,0 +1,33 @@
+$primary: white;
+$secondary: #c2c2c2;
+
+.codeBlock {
+  .copyBtnCont {
+    visibility: hidden;
+    position: relative;
+  }
+  &:hover {
+    .copyBtnCont {
+      visibility: visible;
+    }
+  }
+}
+
+.copyBtnCont {
+  .icon {
+    color: $primary;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+  }
+  .copy {
+    position: relative;
+  }
+  .checked {
+    position: absolute;
+  }
+  &:hover {
+    .icon {
+      color: $secondary;
+    }
+  }
+}

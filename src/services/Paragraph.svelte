@@ -1,12 +1,17 @@
 <!-- Quote.svelte -->
 <script>
-    export let text;
-    export let props;
-    console.log("THIS IS BONKRES");
-    console.log(props);
-  </script>
-  
-  <div class="paragraph">
-    <p>{text}</p>
-  </div>
-  
+  export let text;
+  console.log("TEXXT PARAGRAPH", text);
+</script>
+
+<div class="">
+  <p>
+    {#each text as txt}
+      {#if txt.component}
+        <svelte:component this={txt.component} {...txt.props} />
+      {:else}
+        {txt}
+      {/if}
+    {/each}
+  </p>
+</div>

@@ -2,7 +2,6 @@
   import FeaturedSection from "$components/FeaturedSection.svelte";
   export let data;
   let { posts } = data;
-  console.log(data);
   let name = "ALL THINGS TECH";
 </script>
 

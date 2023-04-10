@@ -31,6 +31,13 @@ export default function ({ slug }) {
                             }
                             caption
                         }
+                        ...on ComponentCodeBlock {
+                          sys {
+                              id
+                          }
+                          caption
+                          code
+                      }
                        }
                     }
                 }

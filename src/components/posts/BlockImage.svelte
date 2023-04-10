@@ -1,8 +1,5 @@
 <script>
-  export let node;
-  export let images;
-  const id = node?.data?.target?.sys?.id;
-  const image = images.find((image) => image?.sys?.id == id);
+  export let image;
   const imageSrc = image.image.url;
   const caption = image.caption;
 </script>

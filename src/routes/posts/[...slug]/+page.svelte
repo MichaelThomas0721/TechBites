@@ -1,6 +1,7 @@
 <script>
   import richTextRenderer from "$services/RichTextRenderer";
   export let data;
+  console.log(data);
   const post = data.post;
   const { author, title, shortDescription, featuredImage, content } = post;
   const publishedDateArr = new Date(post.publishedDate).toString().split(" ");
